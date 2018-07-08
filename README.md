@@ -56,7 +56,6 @@
 #### 【style】
 
 >样式通过style标签<style></style>包裹，默认是影响全局的，如需定义作用域只在该组件下起作用，需在标签上加scoped，<style scoped></style>
-
 >如要引入外部css文件，首先需给项目安装css-loader依赖包，打开cmd，进入项目目录，输入npm install
 >css-loader,回车。安装完成后，就可以在style标签下import所需的css文件，例如：
 
@@ -73,9 +72,7 @@
 ### 4.3 main.js——[入口文件]
 
 >main.js主要是引入vue框架，根组件及路由设置，并且定义vue实例，下图中的
-
 >components:{App}就是引入的根组件App.vue
-
 >后期还可以引入插件，当然首先得安装插件。
 
 <img src="https://upload-images.jianshu.io/upload_images/5700710-23739cb3bafde7a8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/394" alt="">
