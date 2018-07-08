@@ -41,7 +41,7 @@
 
 <img src="https://upload-images.jianshu.io/upload_images/5700710-6b6087ca3510a257.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/546" alt="">
 
-### 【template】
+#### 【template】
 
 其中模板只能包含一个父节点，也就是说顶层的div只能有一个（例如下图，父节点为#app的div，其没有兄弟节点）
 
@@ -49,11 +49,11 @@
 
 打一个比喻吧,<router-view>类似于一个插槽，跳转某个路由时，该路由下的页面就插在这个插槽中渲染显示
 
-### 【script】
+#### 【script】
 
 vue通常用es6来写，用export default导出，其下面可以包含数据data，生命周期(mounted等)，方法(methods)等，具体语法请看vue.js文档，在后面我也会通过例子来说明。
 
-### 【style】
+#### 【style】
 
 样式通过style标签<style></style>包裹，默认是影响全局的，如需定义作用域只在该组件下起作用，需在标签上加scoped，<style scoped></style>
 
