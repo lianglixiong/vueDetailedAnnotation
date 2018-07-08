@@ -1,17 +1,17 @@
 
-### 总体框架
+## 总体框架
 > 一个vue-cli的项目结构如下，其中src文件夹是需要掌握的，所以本文也重点讲解其中的文件，至于其他相关文件，了解一下即可。
 
 <img src="https://upload-images.jianshu.io/upload_images/5700710-cebf33ac17019737.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/650" alt="">
 
-### 文件结构细分
+## 文件结构细分
 
-######1.build——[webpack配置]
+###### 1.build——[webpack配置]
 >build文件主要是webpack的配置，主要启动文件是dev-server.js，当我们输入npm run dev首先启动的就是dev-server.js，它会去检查node及npm版本，加载配置文件，启动服务。
 
 <img src="https://upload-images.jianshu.io/upload_images/5700710-a10682f111510b07.png?imageMogr2/auto-orient/" alt="">
 
-######2.config——[vue项目配置]
+###### 2.config——[vue项目配置]
 >config文件主要是项目相关配置，我们常用的就是当端口冲突时配置监听端口，打包输出路径及命名等
 
 <img src="https://upload-images.jianshu.io/upload_images/5700710-81ac9bc6b912d0fc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/490" alt="">
