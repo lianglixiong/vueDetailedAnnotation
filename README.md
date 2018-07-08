@@ -6,7 +6,7 @@
 
 ## 文件结构细分
 
-#### 1.build——[webpack配置]
+### 1.build——[webpack配置]
 >build文件主要是webpack的配置，主要启动文件是dev-server.js，当我们输入npm run dev首先启动的就是dev-server.js，它会去检查node及npm版本，加载配置文件，启动服务。
 
 <img src="https://upload-images.jianshu.io/upload_images/5700710-a10682f111510b07.png?imageMogr2/auto-orient/" alt="">
