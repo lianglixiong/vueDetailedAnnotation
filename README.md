@@ -41,4 +41,50 @@
 
 <img src="https://upload-images.jianshu.io/upload_images/5700710-6b6087ca3510a257.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/546" alt="">
 
-###【template】
+### 【template】
+
+其中模板只能包含一个父节点，也就是说顶层的div只能有一个（例如下图，父节点为#app的div，其没有兄弟节点）
+
+<router-view></router-view>是子路由视图，后面的路由页面都显示在此处
+
+打一个比喻吧,<router-view>类似于一个插槽，跳转某个路由时，该路由下的页面就插在这个插槽中渲染显示
+
+### 【script】
+
+vue通常用es6来写，用export default导出，其下面可以包含数据data，生命周期(mounted等)，方法(methods)等，具体语法请看vue.js文档，在后面我也会通过例子来说明。
+
+### 【style】
+
+样式通过style标签<style></style>包裹，默认是影响全局的，如需定义作用域只在该组件下起作用，需在标签上加scoped，<style scoped></style>
+
+如要引入外部css文件，首先需给项目安装css-loader依赖包，打开cmd，进入项目目录，输入npm install css-loader,回车。安装完成后，就可以在style标签下import所需的css文件，例如：
+
+```
+<style>
+
+    import './assets/css/public.css'
+
+</style>
+
+```
+这样，我们就可以把style下的样式封装起来，写到css文件夹，再引入到页面使用，整个vue页面也看上去更简洁。
+
+### 4.3 main.js——[入口文件]
+
+main.js主要是引入vue框架，根组件及路由设置，并且定义vue实例，下图中的
+
+components:{App}就是引入的根组件App.vue
+
+后期还可以引入插件，当然首先得安装插件。
+
+<img src="https://upload-images.jianshu.io/upload_images/5700710-23739cb3bafde7a8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/394" alt="">
+
+### 4.4 router——[路由配置]
+
+router文件夹下，有一个index.js，即为路由配置文件
+
+<img src="https://upload-images.jianshu.io/upload_images/5700710-547eb7db1fbff32f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/439" alt="">
+
+这里定义了路径为'/'的路由，该路由对应的页面是Hello组件，所以当我们在浏览器url访问http://localhost:8080/#/时就渲染的Hello组件
+
+类似的，我们可以设置多个路由，‘/index’,'/list'之类的，当然首先得引入该组件，再为该组件设置路由。
